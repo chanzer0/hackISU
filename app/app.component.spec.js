@@ -1,7 +1,14 @@
 "use strict";
+<<<<<<< HEAD
+Object.defineProperty(exports, "__esModule", { value: true });
+var app_component_1 = require("./app.component");
+var testing_1 = require("@angular/core/testing");
+var platform_browser_1 = require("@angular/platform-browser");
+=======
 var app_component_1 = require('./app.component');
 var testing_1 = require('@angular/core/testing');
 var platform_browser_1 = require('@angular/platform-browser');
+>>>>>>> ba0928b1d1b21a74d596395f9492e21a1ec93b0a
 describe('AppComponent', function () {
     var de;
     var comp;
