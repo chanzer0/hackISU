@@ -2,3 +2,5 @@ node_modules/
 bower_components/
 .vagrant/
 VagrantFile
+*.js
+*.js.map
