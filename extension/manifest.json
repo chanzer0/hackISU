@@ -1,0 +1,14 @@
+{
+  "manifest_version": 2,
+
+  "name": "Page redirect",
+  "description": "This extension opens a custom background when you create a new tab",
+  "version": "1.0",
+
+ "chrome_url_overrides": {
+      "newtab": "page.html"
+   },
+  "permissions": [
+    "tabs"
+  ]
+}
