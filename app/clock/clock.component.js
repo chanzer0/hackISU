@@ -8,8 +8,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-Object.defineProperty(exports, "__esModule", { value: true });
-var core_1 = require("@angular/core");
+var core_1 = require('@angular/core');
 var ClockComponent = (function () {
     function ClockComponent() {
         this.clock = [];
@@ -19,14 +18,14 @@ var ClockComponent = (function () {
         //	this.clock = res;
         //});
     };
+    ClockComponent = __decorate([
+        core_1.Component({
+            selector: 'clock',
+            templateUrl: 'clock.component.html',
+        }), 
+        __metadata('design:paramtypes', [])
+    ], ClockComponent);
     return ClockComponent;
 }());
-ClockComponent = __decorate([
-    core_1.Component({
-        selector: 'clock',
-        templateUrl: 'clock.component.html',
-    }),
-    __metadata("design:paramtypes", [])
-], ClockComponent);
 exports.ClockComponent = ClockComponent;
 //# sourceMappingURL=clock.component.js.map
