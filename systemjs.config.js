@@ -13,7 +13,7 @@
       // our app is within the app folder
       app: 'app',
 
-      // angular bundles
+  // angular bundles
       '@angular/core': 'npm:@angular/core/bundles/core.umd.js',
       '@angular/common': 'npm:@angular/common/bundles/common.umd.js',
       '@angular/compiler': 'npm:@angular/compiler/bundles/compiler.umd.js',
@@ -24,6 +24,7 @@
       '@angular/forms': 'npm:@angular/forms/bundles/forms.umd.js',
 
       // other libraries
+      //'ngx-dropdown':              'node_modules/ngx-dropdown',
       'rxjs':                      'npm:rxjs',
       'angular-in-memory-web-api': 'npm:angular-in-memory-web-api/bundles/in-memory-web-api.umd.js'
     },
@@ -36,6 +37,7 @@
       rxjs: {
         defaultExtension: 'js'
       }
+      //'ngx-dropdown': { "main": "index.js", "defaultExtension": "js" }
     }
   });
 })(this);
