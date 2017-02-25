@@ -14,6 +14,10 @@ export class AppComponent {
   name = 'Lexi';
   title = 'app works!';
 
+  weathercomp: WeatherComponent;
+  clockcomp: ClockComponent;
+  todolistcomp: TodoListComponent;
+
 }
 
 
