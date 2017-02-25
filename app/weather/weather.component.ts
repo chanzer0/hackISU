@@ -10,12 +10,12 @@ import { WeatherService } from './shared/weather.service';
 })
 
 export class WeatherComponent implements OnInit {
-	weather: Weather[] = [];
+	weather: Weather;
 
 	constructor(private weatherService: WeatherService) { }
 
 	ngOnInit() {
-		this.weatherService.getList().subscribe((res) => {
+		this.weatherService.getWeatherByZip(51401, 'us').then((res) => {
 			this.weather = res;
 		});
 	}

@@ -8,37 +8,18 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-<<<<<<< HEAD
-Object.defineProperty(exports, "__esModule", { value: true });
-var core_1 = require("@angular/core");
-var weather_service_1 = require("./shared/weather.service");
-=======
 var core_1 = require('@angular/core');
 var weather_service_1 = require('./shared/weather.service');
->>>>>>> ba0928b1d1b21a74d596395f9492e21a1ec93b0a
 var WeatherComponent = (function () {
     function WeatherComponent(weatherService) {
         this.weatherService = weatherService;
-        this.weather = [];
     }
     WeatherComponent.prototype.ngOnInit = function () {
         var _this = this;
-        this.weatherService.getList().subscribe(function (res) {
+        this.weatherService.getWeatherByZip(51401, 'us').then(function (res) {
             _this.weather = res;
         });
     };
-<<<<<<< HEAD
-    return WeatherComponent;
-}());
-WeatherComponent = __decorate([
-    core_1.Component({
-        selector: 'weather',
-        templateUrl: 'weather.component.html',
-        providers: [weather_service_1.WeatherService]
-    }),
-    __metadata("design:paramtypes", [weather_service_1.WeatherService])
-], WeatherComponent);
-=======
     WeatherComponent = __decorate([
         core_1.Component({
             selector: 'weather',
@@ -49,6 +30,5 @@ WeatherComponent = __decorate([
     ], WeatherComponent);
     return WeatherComponent;
 }());
->>>>>>> ba0928b1d1b21a74d596395f9492e21a1ec93b0a
 exports.WeatherComponent = WeatherComponent;
 //# sourceMappingURL=weather.component.js.map

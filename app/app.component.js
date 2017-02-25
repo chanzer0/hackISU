@@ -16,7 +16,8 @@ var core_1 = require('@angular/core');
 >>>>>>> ba0928b1d1b21a74d596395f9492e21a1ec93b0a
 var AppComponent = (function () {
     function AppComponent() {
-        this.name = 'Angular';
+        this.name = 'Lexi';
+        this.title = 'app works!';
     }
 <<<<<<< HEAD
     return AppComponent;
@@ -33,7 +34,7 @@ AppComponent = __decorate([
     AppComponent = __decorate([
         core_1.Component({
             moduleId: module.id,
-            selector: 'my-app',
+            selector: 'app-root',
             templateUrl: 'app.component.html',
             styleUrls: ['app.component.css'],
         }), 

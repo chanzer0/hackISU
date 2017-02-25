@@ -8,37 +8,30 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-<<<<<<< HEAD
-Object.defineProperty(exports, "__esModule", { value: true });
-var core_1 = require("@angular/core");
-var http_1 = require("@angular/http");
-require("rxjs/add/operator/map");
-=======
 var core_1 = require('@angular/core');
 var http_1 = require('@angular/http');
-require('rxjs/add/operator/map');
->>>>>>> ba0928b1d1b21a74d596395f9492e21a1ec93b0a
+require('rxjs/add/operator/toPromise');
 var WeatherService = (function () {
     function WeatherService(http) {
         this.http = http;
+        this.baseUrl = 'http://api.openweathermap.org/data/2.5/weather?zip=';
+        this.apiKey = '&APPID=3f48179c259d742cbcabfeec10cc30e3';
     }
-    WeatherService.prototype.getList = function () {
-        return this.http.get('/api/list').map(function (res) { return res.json(); });
+    ;
+    WeatherService.prototype.getWeatherByZip = function (zip, countryid) {
+        return this.http.get(this.baseUrl + zip + "," + countryid + this.apiKey)
+            .toPromise()
+            .then(function (res) {
+            return res.json();
+        }, function (err) {
+            return err;
+        });
     };
-<<<<<<< HEAD
-    return WeatherService;
-}());
-WeatherService = __decorate([
-    core_1.Injectable(),
-    __metadata("design:paramtypes", [http_1.Http])
-], WeatherService);
-=======
     WeatherService = __decorate([
         core_1.Injectable(), 
         __metadata('design:paramtypes', [http_1.Http])
     ], WeatherService);
     return WeatherService;
 }());
->>>>>>> ba0928b1d1b21a74d596395f9492e21a1ec93b0a
 exports.WeatherService = WeatherService;
 //# sourceMappingURL=weather.service.js.map
