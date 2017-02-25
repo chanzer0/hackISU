@@ -17,6 +17,8 @@ export class Todo {
     ) {}
 }
 
+const TODOS: Todo[] = [];
+
 @Component({
     selector: 'todo-list',
     templateUrl: './app/todo-list/todo-list.component.html',
@@ -64,5 +66,5 @@ export class TodoListComponent {
     }
 
     deleteTask(obj:any) {
-    }
+}
 }
