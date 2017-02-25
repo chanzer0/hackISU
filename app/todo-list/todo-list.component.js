@@ -13,6 +13,7 @@ var core_1 = require("@angular/core");
 var TodoListComponent = (function () {
     function TodoListComponent() {
         this.todoList = [];
+        this.issubmitted = false;
     }
     TodoListComponent.prototype.ngOnInit = function () {
         //this.todoListService.getList().subscribe((res) => {
@@ -29,4 +30,11 @@ TodoListComponent = __decorate([
     __metadata("design:paramtypes", [])
 ], TodoListComponent);
 exports.TodoListComponent = TodoListComponent;
+function addtolist() {
+    String:  = document.getElementById("TodoList");
+}
+{
+    onclick;
+    "addtolist()";
+}
 //# sourceMappingURL=todo-list.component.js.map

@@ -12,9 +12,20 @@ export class TodoListComponent implements OnInit {
 
 	constructor() { }
 
+	issubmitted = false;
+
 	ngOnInit() {
 		//this.todoListService.getList().subscribe((res) => {
 		//	this.todoList = res;
 		//});
+	}
+	function addtolist(){
+
+		String:  = document.getElementById("TodoList");
+
+	}
+
+	{
+		<button onclick = "addtolist()"
 	}
 }
