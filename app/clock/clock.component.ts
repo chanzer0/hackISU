@@ -5,6 +5,7 @@ import { Clock } from './shared/clock.model';
 @Component({
 	selector: 'clock',
 	templateUrl: './app/clock/clock.component.html',
+	styleUrls: ['./app/clock/clock.component.css'],
 })
 
 export class ClockComponent {
@@ -43,9 +44,11 @@ export class ClockComponent {
 
 		this.date = new Date();
 
-		this.dateString = weekday[this.date.getDay()] + "," + month[this.date.getMonth()] + this.date.getDate() + this.date.getFullYear();
+		this.dateString = weekday[this.date.getDay()] + ", " + month[this.date.getMonth()] + " " + this.date.getDate() + " " + this.date.getFullYear();
 
-		console.log(this.date);
+		setInterval(() => {
+      		this.date = new Date();
+    	}, 1000);
 
 	}
 

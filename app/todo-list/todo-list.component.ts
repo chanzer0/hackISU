@@ -4,13 +4,23 @@ import { Component, OnInit, Input,
   style,
   transition,
   animate } from '@angular/core';
+import { TodoList } from '../todo-list/shared/todo-list.model';
+//import { TodoService } from '../services/todo.service';
+import { Routes, RouterModule } from '@angular/router';
+import 'rxjs/add/operator/map';
 
-import { TodoList } from './shared/todo-list.model';
+export class Todo {
+    constructor(
+        public id:number,
+        public newTodo:String,
+        public done:boolean
+    ) {}
+}
 
 @Component({
     selector: 'todo-list',
-    templateUrl: '../app/todo-list/todo-list.component.html',
-    styleUrls: [ '../app/todo-list/todo-list.component.css'],
+    templateUrl: './app/todo-list/todo-list.component.html',
+    styleUrls: [ './app/todo-list/todo-list.component.css'],
     animations: [
     trigger('focusPanel', [
       state('inactive', style({
@@ -27,14 +37,32 @@ import { TodoList } from './shared/todo-list.model';
   ]
 })
 
-export class TodoListComponent implements OnInit {
+export class TodoListComponent {
 	todoList: TodoList[] = [];
 
 	constructor() { }
 
-	ngOnInit() {
-		//this.todoListService.getList().subscribe((res) => {
-		//	this.todoList = res;
-		//});
-	}
+	index:number = 0;
+    model = new Todo(this.index, "", false);
+    todos = TODOS;
+    submitted = false;
+    done = false;
+    public mouseOver = "inactive";
+
+    onSubmit() { this.submitted = true;}
+
+    clicked() {
+    }
+
+    Done(obj:any) {
+    }
+
+    showDeleteTask(obj:any) {
+    }
+
+    hideDeleteTask(obj:any) {
+    }
+
+    deleteTask(obj:any) {
+    }
 }
