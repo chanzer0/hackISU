@@ -7,7 +7,7 @@ import { routing, appRoutingProviders } from './app.routing';
 import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 import { WeatherComponent } from '../app/weather/weather.component';
-//import { SettingsComponent } from '../app/settings/settings.component';
+import { SettingsComponent } from '../app/settings/settings.component';
 import { ClockComponent } from '../app/clock/clock.component';
 import { TodoListComponent } from '../app/todo-list/todo-list.component';
 import { WeatherService } from './weather/shared/weather.service';
@@ -18,7 +18,7 @@ import { WeatherService } from './weather/shared/weather.service';
     WeatherComponent,
     ClockComponent,
     TodoListComponent,
-    //SettingsComponent
+    SettingsComponent
   ],
   imports: [
     BrowserModule,

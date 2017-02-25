@@ -5,7 +5,7 @@ import { WeatherService } from './shared/weather.service';
 
 @Component({
 	selector: 'weather',
-	templateUrl: 'weather.component.html',
+	templateUrl: './app/weather/weather.component.html',
 	providers: [WeatherService]
 })
 
