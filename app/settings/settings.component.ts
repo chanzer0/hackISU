@@ -15,7 +15,7 @@ import { SettingsService } from './shared/settings.service';
 	</form>
 	`
 })
-
+//test
 export class SettingsComponent  {
 	//settings: Settings[] = [];
 	
