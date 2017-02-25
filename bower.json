@@ -1,0 +1,21 @@
+{
+  "name": "hackisu",
+  "description": "dashboard a",
+  "main": "",
+  "authors": [
+    "lmreicks <lmreicks@iastate.edu>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/gould-ann/hackISU",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  }
+}

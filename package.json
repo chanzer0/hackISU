@@ -1,7 +1,7 @@
 {
-  "name": "angular-quickstart",
+  "name": "hackisu",
   "version": "1.0.0",
-  "description": "QuickStart package.json from the documentation, supplemented with testing support",
+  "description": "Dashboard app for hackisu",
   "license": "MIT",
   "scripts": {
     "start": "concurrently \"npm run tsc:w\" \"npm run lite\" ",
@@ -28,7 +28,7 @@
     "ngx-dropdown": "0.0.22",
     "reflect-metadata": "^0.1.8",
     "rxjs": "5.0.0-rc.4",
-    "systemjs": "0.19.40",
+    "systemjs": "^0.19.40",
     "zone.js": "^0.7.2"
   },
   "devDependencies": {
@@ -47,7 +47,6 @@
     "karma-jasmine-html-reporter": "^0.2.2",
     "protractor": "~4.0.13",
     "rimraf": "^2.5.4",
-
     "@types/node": "^6.0.46",
     "@types/jasmine": "^2.5.36",
     "@types/selenium-webdriver": "^2.53.33"

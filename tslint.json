@@ -1,3 +1,4 @@
+  {
     "no-shadowed-variable": true,
     "no-string-literal": false,
     "no-string-throw": true,
