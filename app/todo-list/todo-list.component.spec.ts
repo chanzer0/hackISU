@@ -22,7 +22,7 @@ describe('a todo-list component', () => {
 	});
 
 	// instantiation through framework injection
-	beforeEach(inject([TodoListComponent], (TodoListComponent) => {
+	beforeEach(inject([TodoListComponent], (TodoListComponent:any) => {
 		component = TodoListComponent;
 	}));
 
