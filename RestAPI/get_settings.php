@@ -4,7 +4,8 @@
     $last_name = $_GET['lastName'];
     $color = $_GET['backgroundColor'];
 
-    $connection - mysqli_connect('localhost', 'root', 'hackISU');
-    
+    $connection - @mysqli_connect('localhost', 'root', 'Sailer28', 'hackISU');
 
-?>
+    $query - "INSERT INTO users (first_name, last_name, zip_code, color) VALUES ($first_name, $last_name, $zip_code, $color))";
+
+    @mysql_query($query);
