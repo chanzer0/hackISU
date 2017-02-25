@@ -1,7 +1,8 @@
 module.exports = function(config) {
 
-  var appBase    = 'src/';       // transpiled app JS and map files
+  var appBase    = '';       // transpiled app JS and map files
   var appSrcBase = appBase;      // app source TS files
+  var appAssets  = 'base/app/'; // component assets fetched by Angular's compile
 
   // Testing helpers (optional) are conventionally in a folder called `testing`
   var testingBase    = 'testing/'; // transpiled test JS and map files
@@ -79,8 +80,8 @@ module.exports = function(config) {
 
     // Proxied base paths for loading assets
     proxies: {
-      // required for modules fetched by SystemJS
-      '/base/src/node_modules/': '/base/node_modules/'
+      // required for component assets fetched by Angular's compiler
+      "/app/": appAssets
     },
 
     exclude: [],
