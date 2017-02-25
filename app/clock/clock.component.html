@@ -1,1 +1,5 @@
-<div class="clock"> Hello ClockComponent! </div>
+<div class="clock">
+    <h2>{{dateString}}</h2>
+    <h2>{{ date | date: 'h:mm' }}</h2>
+    <p>{{ date | date:'ss'}}
+</div>
