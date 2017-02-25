@@ -8,7 +8,6 @@
     "experimentalDecorators": true,
     "lib": [ "es2015", "dom" ],
     "noImplicitAny": true,
-    "outDir": "node_modules/systemjs/dist/system.src.js",
     "suppressImplicitAnyIndexErrors": true
   }
 }
