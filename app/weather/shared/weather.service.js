@@ -8,10 +8,16 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+<<<<<<< HEAD
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var http_1 = require("@angular/http");
 require("rxjs/add/operator/map");
+=======
+var core_1 = require('@angular/core');
+var http_1 = require('@angular/http');
+require('rxjs/add/operator/map');
+>>>>>>> ba0928b1d1b21a74d596395f9492e21a1ec93b0a
 var WeatherService = (function () {
     function WeatherService(http) {
         this.http = http;
@@ -19,11 +25,20 @@ var WeatherService = (function () {
     WeatherService.prototype.getList = function () {
         return this.http.get('/api/list').map(function (res) { return res.json(); });
     };
+<<<<<<< HEAD
     return WeatherService;
 }());
 WeatherService = __decorate([
     core_1.Injectable(),
     __metadata("design:paramtypes", [http_1.Http])
 ], WeatherService);
+=======
+    WeatherService = __decorate([
+        core_1.Injectable(), 
+        __metadata('design:paramtypes', [http_1.Http])
+    ], WeatherService);
+    return WeatherService;
+}());
+>>>>>>> ba0928b1d1b21a74d596395f9492e21a1ec93b0a
 exports.WeatherService = WeatherService;
 //# sourceMappingURL=weather.service.js.map

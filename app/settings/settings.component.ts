@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 import { Settings } from './shared/settings.model';
-
+//hmmm work on this.
 import { SettingsService } from './shared/settings.service';
 
 @Component({
@@ -10,16 +10,8 @@ import { SettingsService } from './shared/settings.service';
 	providers: [Settings],
 
 	template: `
-	<form class ="settings" action="/seansShit.php" method="get">
-		<div id="zip">
-			Zip code: <input type = "text" name="zipcode">
-		<br>
-		</div>
-		<div id= "name">
-			First Name: <input type = "text" name="fName">
-			Last Name: <input type="text" name= "lName">
-		<br>
-		</div>
+	<form id ="settings" action="/seansShit.php" method="get">
+		Zip code: <input type = "text" name="zipcode">
 	</form>
 	`
 })

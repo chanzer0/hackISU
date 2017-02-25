@@ -8,9 +8,14 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+<<<<<<< HEAD
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var clock_service_1 = require("./shared/clock.service");
+=======
+var core_1 = require('@angular/core');
+var clock_service_1 = require('./shared/clock.service');
+>>>>>>> ba0928b1d1b21a74d596395f9492e21a1ec93b0a
 var ClockComponent = (function () {
     function ClockComponent(clockService) {
         this.clockService = clockService;
@@ -22,6 +27,7 @@ var ClockComponent = (function () {
             _this.clock = res;
         });
     };
+<<<<<<< HEAD
     return ClockComponent;
 }());
 ClockComponent = __decorate([
@@ -32,5 +38,17 @@ ClockComponent = __decorate([
     }),
     __metadata("design:paramtypes", [clock_service_1.ClockService])
 ], ClockComponent);
+=======
+    ClockComponent = __decorate([
+        core_1.Component({
+            selector: 'clock',
+            templateUrl: 'clock.component.html',
+            providers: [clock_service_1.ClockService]
+        }), 
+        __metadata('design:paramtypes', [clock_service_1.ClockService])
+    ], ClockComponent);
+    return ClockComponent;
+}());
+>>>>>>> ba0928b1d1b21a74d596395f9492e21a1ec93b0a
 exports.ClockComponent = ClockComponent;
 //# sourceMappingURL=clock.component.js.map

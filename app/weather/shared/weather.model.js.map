@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 {"version":3,"file":"weather.model.js","sourceRoot":"","sources":["weather.model.ts"],"names":[],"mappings":";;AAAA;IAAA;IAGA,CAAC;IAAD,cAAC;AAAD,CAAC,AAHD,IAGC;AAHY,0BAAO"}
+=======
+{"version":3,"file":"weather.model.js","sourceRoot":"","sources":["weather.model.ts"],"names":[],"mappings":";AAAA;IAAA;IAGA,CAAC;IAAD,cAAC;AAAD,CAAC,AAHD,IAGC;AAHY,eAAO,UAGnB,CAAA"}
+>>>>>>> ba0928b1d1b21a74d596395f9492e21a1ec93b0a
