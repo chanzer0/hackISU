@@ -8,8 +8,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-Object.defineProperty(exports, "__esModule", { value: true });
-var core_1 = require("@angular/core");
+var core_1 = require('@angular/core');
 var TodoListComponent = (function () {
     function TodoListComponent() {
         this.todoList = [];
@@ -20,15 +19,15 @@ var TodoListComponent = (function () {
         //	this.todoList = res;
         //});
     };
+    TodoListComponent = __decorate([
+        core_1.Component({
+            selector: 'todo-list',
+            templateUrl: 'todo-list.component.html',
+        }), 
+        __metadata('design:paramtypes', [])
+    ], TodoListComponent);
     return TodoListComponent;
 }());
-TodoListComponent = __decorate([
-    core_1.Component({
-        selector: 'todo-list',
-        templateUrl: 'todo-list.component.html',
-    }),
-    __metadata("design:paramtypes", [])
-], TodoListComponent);
 exports.TodoListComponent = TodoListComponent;
 function addtolist() {
     String:  = document.getElementById("TodoList");

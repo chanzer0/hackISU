@@ -1,1 +1,18 @@
-<div class="todo-list"> Hello TodoListComponent! </div>
+<div class="list">
+    <form (ngSubmit)="onSubmit()" #todoForm="ngForm">
+      <div class="form-group">
+          <label for="newTodo"></label>
+          <input type="text" (keypress)="onkeydown($event)" (enter)="todoForm.reset()" class="todo-input" id="newTodo"
+               [(ngModel)]="model.newTodo" name="newTodo"
+               #newTodo="ngModel">
+               <button type="button" class="new-todo-btn" (click)="clicked(); todoForm.reset()">+</button>
+      </div>
+    </form>
+    <div *ngFor="let todo of todos">
+        <span class="task">
+        <p (mouseover)="showDeleteTask(todo)" (mouseout)="hideDeleteTask(todo)" class="done-{{todo.done}}" (click)="Done(todo)">
+        {{todo.newTodo}}
+        </p><p [@focusPanel]="todo.mouseOver" (click)="deleteTask(todo)" class="delete">x</p>
+        </span>
+    </div>
+</div>
