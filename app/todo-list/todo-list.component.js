@@ -21,7 +21,22 @@ var TodoListComponent = (function () {
     TodoListComponent = __decorate([
         core_1.Component({
             selector: 'todo-list',
-            templateUrl: 'todo-list.component.html',
+            templateUrl: '../app/todo-list/todo-list.component.html',
+            styleUrls: ['../app/todo-list/todo-list.component.css'],
+            animations: [
+                core_1.trigger('focusPanel', [
+                    core_1.state('inactive', core_1.style({
+                        display: 'none',
+                        'text-align': 'right'
+                    })),
+                    core_1.state('active', core_1.style({
+                        display: 'unset',
+                        'text-align': 'right'
+                    })),
+                    core_1.transition('inactive => active', core_1.animate('100ms ease-in')),
+                    core_1.transition('active => inactive', core_1.animate('100ms ease-out'))
+                ])
+            ]
         }), 
         __metadata('design:paramtypes', [])
     ], TodoListComponent);

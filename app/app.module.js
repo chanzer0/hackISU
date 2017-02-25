@@ -17,7 +17,7 @@ var app_routing_1 = require('./app.routing');
 var router_1 = require('@angular/router');
 var app_component_1 = require('./app.component');
 var weather_component_1 = require('../app/weather/weather.component');
-//import { SettingsComponent } from '../app/settings/settings.component';
+var settings_component_1 = require('../app/settings/settings.component');
 var clock_component_1 = require('../app/clock/clock.component');
 var todo_list_component_1 = require('../app/todo-list/todo-list.component');
 var weather_service_1 = require('./weather/shared/weather.service');
@@ -31,6 +31,7 @@ var AppModule = (function () {
                 weather_component_1.WeatherComponent,
                 clock_component_1.ClockComponent,
                 todo_list_component_1.TodoListComponent,
+                settings_component_1.SettingsComponent
             ],
             imports: [
                 platform_browser_1.BrowserModule,

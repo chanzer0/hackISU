@@ -6,7 +6,7 @@ import { SettingsService } from './shared/settings.service';
 
 @Component({
 	selector: 'settings',
-	templateUrl: 'settings.component.html',
+	templateUrl: './app/settings/settings.component.html',
 	providers: [Settings],
 
 	template: `

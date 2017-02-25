@@ -23,7 +23,7 @@ var WeatherComponent = (function () {
     WeatherComponent = __decorate([
         core_1.Component({
             selector: 'weather',
-            templateUrl: 'weather.component.html',
+            templateUrl: './app/weather/weather.component.html',
             providers: [weather_service_1.WeatherService]
         }), 
         __metadata('design:paramtypes', [weather_service_1.WeatherService])

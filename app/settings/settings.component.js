@@ -16,7 +16,7 @@ var SettingsComponent = (function () {
     SettingsComponent = __decorate([
         core_1.Component({
             selector: 'settings',
-            templateUrl: 'settings.component.html',
+            templateUrl: './app/settings/settings.component.html',
             providers: [settings_model_1.Settings],
             template: "\n\t<form id =\"settings\" action=\"/get_settings.php\" method=\"get\">\n\t\tZip code: <input type = \"text\" name=\"zipcode\">\n\t</form>\n\t"
         }), 
