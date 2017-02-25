@@ -4,7 +4,7 @@ import { Clock } from './shared/clock.model';
 
 @Component({
 	selector: 'clock',
-	templateUrl: 'clock.component.html',
+	templateUrl: './app/clock/clock.component.html',
 })
 
 export class ClockComponent {
