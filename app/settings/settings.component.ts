@@ -10,7 +10,9 @@ import { SettingsService } from './shared/settings.service';
 	providers: [Settings],
 
 	template: `
-//typically other html stuff here, but we'll see
+	<form id ="settings" action="/get_settings.php" method="get">
+		Zip code: <input type = "text" name="zipcode">
+	</form>
 	`
 })
 //test

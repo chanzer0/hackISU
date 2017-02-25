@@ -47,4 +47,4 @@ var MockWeatherService = (function (_super) {
     };
     return MockWeatherService;
 }(weather_service_1.WeatherService));
-//# sourceMappingURL=weather.component.spec.js.map
+//# sourceMappingURL=settings.component.spec.js.map

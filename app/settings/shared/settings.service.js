@@ -26,4 +26,4 @@ SettingsService = __decorate([
     __metadata("design:paramtypes", [http_1.Http])
 ], SettingsService);
 exports.SettingsService = SettingsService;
-//# sourceMappingURL=Settings.service.js.map
+//# sourceMappingURL=settings.service.js.map
