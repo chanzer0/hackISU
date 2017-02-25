@@ -8,8 +8,9 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require('@angular/core');
-var weather_service_1 = require('./shared/weather.service');
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = require("@angular/core");
+var weather_service_1 = require("./shared/weather.service");
 var WeatherComponent = (function () {
     function WeatherComponent(weatherService) {
         this.weatherService = weatherService;
@@ -20,15 +21,15 @@ var WeatherComponent = (function () {
             _this.weather = res;
         });
     };
-    WeatherComponent = __decorate([
-        core_1.Component({
-            selector: 'weather',
-            templateUrl: 'weather.component.html',
-            providers: [weather_service_1.WeatherService]
-        }), 
-        __metadata('design:paramtypes', [weather_service_1.WeatherService])
-    ], WeatherComponent);
     return WeatherComponent;
 }());
+WeatherComponent = __decorate([
+    core_1.Component({
+        selector: 'weather',
+        templateUrl: 'weather.component.html',
+        providers: [weather_service_1.WeatherService]
+    }),
+    __metadata("design:paramtypes", [weather_service_1.WeatherService])
+], WeatherComponent);
 exports.WeatherComponent = WeatherComponent;
 //# sourceMappingURL=weather.component.js.map
