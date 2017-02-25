@@ -22,7 +22,7 @@ describe('a weather component', () => {
 	});
 
 	// instantiation through framework injection
-	beforeEach(inject([WeatherComponent], (WeatherComponent) => {
+	beforeEach(inject([WeatherComponent], (WeatherComponent:any) => {
 		component = WeatherComponent;
 	}));
 

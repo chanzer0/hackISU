@@ -22,7 +22,7 @@ describe('a clock component', () => {
 	});
 
 	// instantiation through framework injection
-	beforeEach(inject([ClockComponent], (ClockComponent) => {
+	beforeEach(inject([ClockComponent], (ClockComponent:any) => {
 		component = ClockComponent;
 	}));
 

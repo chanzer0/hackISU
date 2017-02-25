@@ -9,7 +9,7 @@ import { AppComponent }  from './app.component';
 
 @NgModule({
     imports:    [ BrowserModule, HttpModule, JsonpModule ],
-    declarations: [ AppComponent ],
+    declarations: [ AppComponent, ClockComponent, WeatherComponent, TodoListComponent ],
     providers: [  ],
     bootstrap: [ AppComponent ]   
 })
