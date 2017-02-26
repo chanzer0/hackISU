@@ -1,3 +1,33 @@
-.weather{
 
+body{
+    background-color:#fff;
+    font-family:'raleway', sans-serif;
+    position: relative;
+  	margin-left: auto;
+  	margin-right: auto;
+  	padding-right: 15px;
+  	padding-left: 15px;
+     /*this is what Sean should be working on*/
 }
+
+.weather{
+/*maybe we could incorperate something here that could change certain values of the background
+but its currently like the old weather widget from OS colored */
+    background-color:#00004d;
+    border-radius:15px;
+    color:#fff;
+/*we can set different attributes for the bold if we want too.*/
+}
+
+.clock{
+    background-color:#2e283a;
+    border-radius: 15px;
+    color:#fff;
+}
+
+.todo{
+    background-color:#ffe83f;
+    border-radius:15px;
+    color:#000;
+}
+
